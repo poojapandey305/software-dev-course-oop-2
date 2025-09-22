@@ -1,6 +1,6 @@
 package org.example;
 
-public class Lemonade {
+public class  Lemonade {
     // Static field examples
     public static int defaultSugar = 2;
     public static int defaultIce = 3;
@@ -48,7 +48,31 @@ public class Lemonade {
 
     // Create a method called mix that takes two Lemonade objects and returns a new Lemonade object with
     // the sum of the lemons, sugar, and ice from the two Lemonade objects.
+
     //
     // HINT: You can get the counts from the two Lemonade objects using their get methods, e.g.:
     // int newLemonadeLemons = lemonade1.getLemons() + lemonade2.getLemons();
+
+    public static Lemonade mix(Lemonade lemonade1,  Lemonade lemonade2) {
+
+        int mixedLemons = lemonade1.getLemons() + lemonade2.getLemons();
+        int mixedSuger = lemonade1.getSugar() + lemonade2.getSugar();
+        int mixedIce = lemonade1.getIce() + lemonade2.getIce();{
+
+
+            return new Lemonade (mixedLemons,mixedLemons,mixedIce);
+        }
+
+
+    }
 }
+
+
+
+
+
+
+
+
+
+

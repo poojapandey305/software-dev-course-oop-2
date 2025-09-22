@@ -68,7 +68,7 @@ public class LemonadeStand {
     // If the lemonade is successfully made, the method should add the sale amount to the money field and return true.
 
     // HINT: You can copy and paste the body of the sellLemonade method and should only need to modify the first line.
-    public boolean sellLemonade( int lemons,int sugar,int ice) {
+    public boolean sellLemonade(int lemons, int sugar, int ice) {
         Lemonade lemonade = new Lemonade();
 
         if (tryMakingLemonade(lemonade) != null) {
@@ -78,10 +78,6 @@ public class LemonadeStand {
             return false;
         }
     }
-
-
-
-
 
 
     private Lemonade tryMakingLemonade(Lemonade lemonade) {
